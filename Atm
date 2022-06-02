@@ -1,0 +1,20 @@
+$nomention
+$if[$findUser[$message;yes]==$authorID]
+$reply
+$title[ ( ⭐ ) Usuário: $username]
+$description[
+**Informações Abaixo:**
+> **🪙 | Cois: `$numberSeparator[$getVar[money;$findUser[$message]]`**]
+$footer[Comando Utilizado Por $username]
+$footerIcon[$serverIcon]
+$thumbnail[https://media.discordapp.net/attachments/959932887149457408/961769707059445780/3430144-mignon-axolotl-hug-pose-vector-illustration-vectoriel-3.jpg]
+$color[EC8DE2]
+$else
+$title[ ( ⭐ ) Usuário: $username[$findUser[$message]] ]
+$description[
+> **🪙 | Cois: `$numberSeparator[$getVar[money;$findUser[$message]]`**]
+$footer[Comando Utilizado Por $username]
+$footerIcon[$serverIcon]
+$thumbnail[https://media.discordapp.net/attachments/959932887149457408/961769707059445780/3430144-mignon-axolotl-hug-pose-vector-illustration-vectoriel-3.jpg]
+$color[EC8DE2]
+$endif
